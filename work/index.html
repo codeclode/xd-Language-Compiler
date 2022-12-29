@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>画图</title>
+</head>
+
+<body>
+  <textarea id="codeInput" style="display:block; height: 200px; width: 80%;"></textarea>
+  <label>
+    点大小
+    <input value="1" id="size" />
+  </label>
+  <label>
+    延迟，建议不要用，promise实现sleep，纯纯扯淡。。。
+    <input id="delayTime" />
+  </label>
+  <br />
+  <label>
+    颜色
+    <input id="color" type="color" />
+  </label>
+  <button id="compileButton">编译</button>
+  <canvas style="display:block;border-radius: 10px; border: 3px dotted black;" id="c" width="800"
+    height="1080"></canvas>
+</body>
+<script src="./index.ts"></script>
+
+</html>
